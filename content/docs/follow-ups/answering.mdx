@@ -1,9 +1,14 @@
 ---
 title: Answer a follow-up
-description: For members, how to answer a follow-up in Slack, Microsoft Teams or Webex, and how to edit a response.
+description: For members, how to answer a follow-up right in Slack or Microsoft Teams, and how to edit a response.
 ---
 
-At the follow-up's time, Sup! sends you a message with three buttons:
+You answer a follow-up where you already work. At the follow-up's time, Sup! messages you in
+Slack or Microsoft Teams, and you reply right there. You don't need to open the Sup! dashboard.
+
+## Answer in Slack or Microsoft Teams
+
+The message from Sup! has three buttons:
 
 ![A Sup! message in Slack asking for updates, with Yes, Use previous response and Not working today buttons](/images/follow-ups/chat-message.png)
 
@@ -11,40 +16,39 @@ At the follow-up's time, Sup! sends you a message with three buttons:
 - **Use previous response**: open the form already filled in with your last answers, then
   change what you need and submit.
 - **Not working today**: tell Sup! you're off. Sup! replies *"I have marked you as not working
-  today."* and posts that you're not working to the channel. This button only appears if the
-  follow-up allows it.
+  today."* and lets the channel know. This button only appears if the follow-up allows it.
 
-The first time you're added to a follow-up, Sup! also introduces itself and tells you when the
-follow-up runs and where your answers will be posted.
+What happens after **Yes** depends on where you are:
 
-## Answering
-
-<Tabs items={['Slack', 'Microsoft Teams', 'Webex']}>
+<Tabs items={['Slack', 'Microsoft Teams']}>
 <Tab value="Slack">
 
-How you answer depends on the follow-up's interaction type.
+The follow-up's creator picks one of two ways to answer.
 
-**Dialog window**: **Yes** opens a form with the questions. If there's a blocker question, tick
-**Do you have any blockers?** to answer it. If the follow-up tracks mood, pick an answer for
-**How are you feeling today?** Then select **Submit**.
+**Dialog window**: **Yes** opens a form with all the questions.
 
-**Conversational**: after **Yes**, Sup! asks the questions one at a time and you reply by
-typing. Optional questions have a **Skip** button, and **View previous answers** shows what you
-said last time. For the blocker question, reply "no" or "none" if you have none.
+1. Answer the questions. If you have a blocker, tick **Do you have any blockers?** and describe it.
+2. If the follow-up tracks mood, pick an answer for **How are you feeling today?**
+3. Select **Submit**.
 
-You can also answer from a direct message to Sup!. Type
-`response <follow-up-name> <YYYY-MM-DD>`, or type `help` to see how.
+**Conversational**: after **Yes**, Sup! asks the questions one at a time in your direct
+messages, and you answer by typing your reply.
+
+- Optional questions have a **Skip** button.
+- **View previous answers** shows what you said last time.
+- For the blocker question, reply "no" or "none" if you have nothing blocking you.
+
+To answer for a particular day, send Sup! a direct message:
+`response <follow-up-name> <YYYY-MM-DD>`. Type `help` to see how.
 
 </Tab>
 <Tab value="Microsoft Teams">
 
-**Yes** opens a pop-up form with the questions. Leave the blocker question blank if you have no
-blockers. Then select **Submit**.
+**Yes** opens a pop-up form with all the questions.
 
-</Tab>
-<Tab value="Webex">
-
-**Yes** turns the message into a form with the questions. Fill it in and select **Submit**.
+1. Answer the questions. Leave the blocker question blank if nothing is blocking you.
+2. If the follow-up tracks mood, pick an answer for your mood.
+3. Select **Submit**.
 
 </Tab>
 </Tabs>
@@ -57,11 +61,8 @@ channel, if the follow-up has one.
   channel about two hours later, marked as an incomplete response.
 </Callout>
 
-## Reminders
-
-If you haven't answered, you may get *"Your response for (follow-up name) is pending."* These
-are the follow-up's automatic reminders. A manager can also remind you from the web app; that
-message names who is reminding you and links to the response form.
+The first time you're added to a follow-up, Sup! also introduces itself and tells you when the
+follow-up runs and where your answers will be posted.
 
 ## Edit a response
 
@@ -69,20 +70,36 @@ If the follow-up allows editing, the thank-you message has an **Edit response** 
 
 - **Slack, dialog window**: opens the form again, with an **On leave?** checkbox. Select
   **Update**.
-- **Slack conversational, Microsoft Teams and Webex**: opens the response in the web app.
+- **Slack conversational and Microsoft Teams**: opens your response in the Sup! dashboard.
 
 In a Slack conversational follow-up you can also edit or delete your own reply message.
 
-On the follow-up's page in the web app, your own answers have an **Edit** link.
+## Reminders
 
-## Answer in the web app
+If you haven't answered, Sup! may message you *"Your response for (follow-up name) is
+pending."* These are the follow-up's automatic reminders. A manager can also remind you from
+the dashboard; that message says who is reminding you and links straight to the response form.
 
-On the follow-up's page, select **Add response** to answer for the selected date. If the
-follow-up allows it, you can pick an earlier date to answer for a day you missed.
+## Alternatively, submit from the dashboard
 
-The page shows the same three buttons as the chat message. Select **Yes** to see the questions,
-then **Submit response**. Turn on **Do you have any blockers?** to answer the blocker question.
+You can also answer from the Sup! dashboard, for example to catch up on a day you missed.
+
+<Steps>
+<Step>
+Open the follow-up from **Follow-ups** in the dashboard and pick the date.
+</Step>
+<Step>
+Select **Add response**. You see the same three buttons as the chat message.
+</Step>
+<Step>
+Select **Yes**, answer the questions, then select **Submit response**. Turn on **Do you have
+any blockers?** if something is blocking you.
+</Step>
+</Steps>
 
 ![The Submit response page for Engineering standup on Oct 23, 2026, with two text questions, the blockers switch, an Options question and the mood question](/images/follow-ups/respond.png)
 
-On Slack, the Sup! app's **Home** tab lists **Your follow-ups** with the same buttons.
+Earlier dates are only available if the follow-up lets members answer for past dates. Your own
+answers on the follow-up's page have an **Edit** link.
+
+On Slack, the Sup! app's **Home** tab also lists **Your follow-ups** with the same buttons.

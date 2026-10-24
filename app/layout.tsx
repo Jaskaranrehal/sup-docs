@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: { template: '%s | Sup! Docs', default: 'Sup! Docs' },
-  description: 'How to use Sup! on Slack, Microsoft Teams and Webex.',
+  description: 'How to use Sup! on Slack and Microsoft Teams.',
 };
 
 const inter = Inter({
