@@ -1,0 +1,20 @@
+{
+  "title": "Leave Tracker",
+  "icon": "CalendarDays",
+  "pages": [
+    "index",
+    "---Set up---",
+    "set-up-a-team",
+    "leave-types-and-policy",
+    "holidays",
+    "locations",
+    "blackout-periods",
+    "---Day to day---",
+    "request-leave",
+    "approvals",
+    "leaves-and-calendar",
+    "balances-and-reports",
+    "notifications",
+    "access"
+  ]
+}

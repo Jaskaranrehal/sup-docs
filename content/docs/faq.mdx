@@ -1,0 +1,154 @@
+---
+title: FAQ
+icon: CircleHelp
+description: Quick answers to common questions about Sup!, follow-ups, leave, forms and settings.
+---
+
+## Getting started
+
+<Accordions type="multiple">
+<Accordion title="Which chat apps does Sup! work with?" id="chat-apps">
+Slack and Microsoft Teams. A few features are Slack only, such as conversational follow-ups and
+setting a Slack status while someone is on leave. Each page says so where it applies.
+</Accordion>
+<Accordion title="How do I log in to the dashboard?" id="log-in">
+Go to [app.supbot.com](https://app.supbot.com) and select **Login with Slack** or
+**Login with Teams**, whichever your team uses. See [Get started](/docs#get-started).
+</Accordion>
+<Accordion title="I'm in more than one workspace. How do I switch?" id="switch-workspace">
+Open **Settings** and select the workspace card at the bottom of the tab list. Pick another
+workspace you've signed in to, or add one. See [Settings](/docs/settings#switch-workspace-or-log-out).
+</Accordion>
+<Accordion title="Do my teammates need to use the dashboard?" id="dashboard-needed">
+No. Members answer follow-ups, fill in forms and get leave updates in Slack or Microsoft Teams.
+The dashboard is where you set things up, and where anyone can answer or request leave if they
+prefer.
+</Accordion>
+</Accordions>
+
+## Admins and access
+
+<Accordions type="multiple">
+<Accordion title="Who can change Sup!'s settings?" id="who-can-change-settings">
+By default, everyone in the workspace. To limit this to a few people, turn on **Access control**
+in **Settings > Admin** and choose what each admin can do. See
+[Admins and access control](/docs/settings/admins).
+</Accordion>
+<Accordion title="It says I don't have permission. What do I do?" id="no-permission">
+Your workspace uses access control and you aren't an admin for that part of Sup!. Select
+**Request admin access** to ask your admins. See
+[People without access](/docs/settings/admins#people-without-access).
+</Accordion>
+<Accordion title="How do I make someone else an admin?" id="add-admin">
+In **Settings > Admin**, select **Add user**, pick them, untick what they shouldn't do, and select
+**Save settings**. You need the **Manage admins** permission. See
+[Turn on access control](/docs/settings/admins#turn-on-access-control).
+</Accordion>
+</Accordions>
+
+## Members and syncing
+
+<Accordions type="multiple">
+<Accordion title="Someone who just joined isn't showing up in Sup!" id="missing-member">
+Go to **Settings > Workspace** and select **Sync workspace data**. Sup! updates the workspace's
+details and members. You can sync once every six hours. See
+[Sync workspace data](/docs/settings/workspace#sync-workspace-data).
+</Accordion>
+<Accordion title="My name or profile picture in Sup! is out of date" id="profile-out-of-date">
+On Slack, Sup! syncs names and profile images from Slack every weekend, so change them in Slack.
+To update them sooner, an admin can select **Sync workspace data** in **Settings > Workspace**.
+</Accordion>
+</Accordions>
+
+## Follow-ups
+
+<Accordions type="multiple">
+<Accordion title="Why did a follow-up arrive at the wrong time?" id="wrong-time">
+Follow-ups run in the workspace timezone unless the follow-up sets its own. Check
+**Workspace timezone** in **Settings > Workspace**, and the follow-up's
+[timezone settings](/docs/follow-ups/schedule#timezones). On Slack, a follow-up can also run in
+each member's own timezone, which they set in **Settings > Profile**.
+</Accordion>
+<Accordion title="Sup! can't post in my channel" id="cant-post">
+Sup! has to be in the channel. On Slack, add `@sup` to the channel and select **Send test
+notification** again. Private channels need a few extra steps, shown in the dashboard. See
+[Channel](/docs/follow-ups/channel-and-members#channel).
+</Accordion>
+<Accordion title="A follow-up stopped running" id="stopped-running">
+Someone may have paused it, or Sup! paused it automatically because nobody was using it: it's
+more than 15 days old, hasn't been edited in 14 days, and has had no responses in 45 days. Turn
+it back on to use it again. See [Pause or resume](/docs/follow-ups/manage#pause-or-resume).
+</Accordion>
+<Accordion title="Why wasn't someone asked today?" id="not-asked">
+If your workspace uses the Leave Tracker, people on approved full-day leave or a public holiday
+aren't asked, and their response is recorded as on leave. See
+[Leave and public holidays](/docs/follow-ups/schedule#leave-and-public-holidays).
+</Accordion>
+<Accordion title="Can members answer without Slack or Microsoft Teams?" id="answer-from-dashboard">
+Yes. They can also submit their response from the dashboard. See
+[Alternatively, submit from the dashboard](/docs/follow-ups/answering#alternatively-submit-from-the-dashboard).
+</Accordion>
+<Accordion title="Who can see the responses?" id="who-sees-responses">
+Each follow-up has its own **Who can view?** setting. It's **Everyone** by default; on a paid
+plan you can limit it to the follow-up's members, chosen managers or workspace admins. See
+[Who can create, view and edit](/docs/follow-ups/access).
+</Accordion>
+<Accordion title="Is mood tracking anonymous?" id="mood-anonymous">
+Yes. Moods aren't shown per person anywhere, only as a team average. See
+[Mood tracking](/docs/follow-ups/mood-tracking).
+</Accordion>
+</Accordions>
+
+## Leave Tracker
+
+<Accordions type="multiple">
+<Accordion title="How do people request leave?" id="request-leave">
+On Slack, from the Sup! app's **Home** tab with **Create holiday / leave**. On Microsoft Teams,
+from the dashboard under **Holidays / Leaves**. See [Request leave](/docs/leave-tracker/request-leave).
+</Accordion>
+<Accordion title="Who approves leave?" id="who-approves">
+The managers of the person's team. They get a direct message and can approve or reject it right
+there. See [Approvals](/docs/leave-tracker/approvals) and
+[Members and managers](/docs/leave-tracker/set-up-a-team#members-and-managers).
+</Accordion>
+<Accordion title="Why does a leave count fewer days than I expected?" id="days-counted">
+Leave only counts the workspace's working days. Team and public holidays inside it aren't
+charged, and half days count as half. See
+[How days are counted](/docs/leave-tracker/leave-types-and-policy#how-days-are-counted).
+</Accordion>
+<Accordion title="How do I make sure people get the right public holidays?" id="public-holidays">
+Public holidays come from each person's location. Add your locations and place people in them, or
+let people pick their own in **Settings > Profile**. See [Locations](/docs/leave-tracker/locations).
+</Accordion>
+<Accordion title="Can I see leave in my own calendar?" id="calendar">
+Yes. Select **Subscribe** on the **Calendar** tab to get a link for Google Calendar, Apple Calendar
+or Outlook. See [Subscribe in your calendar app](/docs/leave-tracker/leaves-and-calendar#subscribe-in-your-calendar-app).
+</Accordion>
+</Accordions>
+
+## Forms
+
+<Accordions type="multiple">
+<Accordion title="Can a form be anonymous?" id="anonymous-form">
+Yes. Turn on **Anonymous responses** when you create the form. It hides who answered everywhere,
+and can't be changed later. See [Create a form](/docs/forms/create).
+</Accordion>
+<Accordion title="What's the difference between a form and a follow-up?" id="form-vs-follow-up">
+A follow-up runs on a schedule and asks its members every time. A form has no schedule: people
+fill it in whenever they need to, such as a request or a one-time survey. See [Forms](/docs/forms).
+</Accordion>
+</Accordions>
+
+## Plans and billing
+
+<Accordions type="multiple">
+<Accordion title="Which features are paid?" id="paid-features">
+Each page says when a feature needs a paid plan. To see or change your plans, open **Billing** in
+the dashboard's left sidebar. With access control on, only admins with **Manage billing** can
+change them.
+</Accordion>
+<Accordion title="Can I get a discount by referring another team?" id="referral">
+On Slack, yes. Share your link from **Settings > Referral Program**: you get 2 months off when
+they subscribe, and they get 30% off for 3 months. See [Referral Program](/docs/settings/referral-program).
+</Accordion>
+</Accordions>

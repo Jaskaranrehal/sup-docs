@@ -1,0 +1,14 @@
+{
+  "title": "Forms",
+  "icon": "ClipboardList",
+  "pages": [
+    "index",
+    "---Set up---",
+    "create",
+    "share",
+    "---Day to day---",
+    "responding",
+    "responses",
+    "manage"
+  ]
+}

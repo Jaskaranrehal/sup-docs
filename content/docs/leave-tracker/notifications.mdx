@@ -1,0 +1,39 @@
+---
+title: What Sup! posts
+description: The messages, digests and Slack statuses the Leave Tracker sends, and when.
+---
+
+## Direct messages
+
+| Who | When | What |
+| --- | --- | --- |
+| Approvers | Someone requests leave or changes a pending request | The request, with **Approve**, **Reject** and **View on dashboard** |
+| Approvers | Requests are still waiting the next working day | A 10 AM reminder, with **Review requests** |
+| The person who asked | An approver decides | *"(approver) has approved your leave…"*, or declined, with the reason and an **Edit leave** link |
+| The person on leave | Someone else cancels their leave | Who cancelled it, and why |
+| Approvers | Someone withdraws or cancels their own leave | Who, which leave, and when |
+| New team members | They're added to a team in a workspace with locations | A request to set their location, with **Set location** |
+
+## In the team's channel
+
+- **Announcements**: when leave is approved, or a holiday is added, Sup! posts
+  *"Upcoming leave on (date)"* or *"Upcoming holiday on (date)"* with who, the type and the
+  reason. Private leave types show as *Time off*, without a reason. If the leave is cancelled,
+  the post changes to say so.
+- **Daily digest**: at 8 AM on working days, *"Today's Leaves/Holidays"* lists who's off today.
+- **Weekly digest**: at 6 PM on the last working day of the week,
+  *"Next week's Leaves/Holidays"* lists next week's holidays and leave.
+
+Public holidays are announced in the channels of every team with people at that location.
+
+## Slack status
+
+If someone chose a Slack status for their leave (or the team has a default), Sup! sets it on
+their Slack profile when the leave starts and clears it when the leave ends or is cancelled.
+People need to have given Sup! permission to update their Slack profile.
+
+## Follow-ups
+
+Approved full-day leave pauses that person's
+[follow-ups](/docs/follow-ups/schedule#leave-and-public-holidays) for those days. Follow-ups
+still run on half days.
