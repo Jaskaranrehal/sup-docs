@@ -2,6 +2,17 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
+/* Sup blue, same values as the app's --sup-accent */
+:root {
+  --color-fd-primary: #0b6dd4;
+  --color-fd-primary-foreground: #ffffff;
+}
+
+.dark {
+  --color-fd-primary: #148dfd;
+  --color-fd-primary-foreground: #ffffff;
+}
+
 html {
   scrollbar-gutter: stable;
 }

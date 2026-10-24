@@ -1,0 +1,42 @@
+---
+title: Who can create, view and edit
+description: Control who can create follow-ups, and who can see and change each one.
+---
+
+## Who can create follow-ups
+
+By default, anyone in the workspace can create a follow-up.
+
+Workspace admins can restrict this. In the web app's admin settings, turn on **Access
+control**. After that, only admins with **Create follow-ups** ticked can create follow-ups.
+
+Anyone else who selects **Create follow-up** sees a **Permission needed** dialog with a
+**Request admin access** button. The same dialog appears if they try to duplicate or delete a
+follow-up.
+
+## Who can view and edit a follow-up
+
+Each follow-up has its own **Who can view?** and **Who can edit?** settings, under **Advanced
+settings** on the **Channels & members** step.
+
+| Option | Who it includes | Plan |
+| --- | --- | --- |
+| **Everyone** | Everyone in the workspace (the default) | All plans |
+| **Follow-up members** | The follow-up's members and its managers | Paid |
+| **Managers** | Only the people you pick under **Select managers** | Paid |
+| **Workspace admins** | Workspace admins. Only offered when access control is on | Paid |
+
+**Who can edit?** can't be more open than **Who can view?**:
+
+- If view is **Everyone**, edit can be any option.
+- If view is **Follow-up members**, edit can be **Follow-up members**, **Managers** or
+  **Workspace admins**.
+- If view is **Managers** or **Workspace admins**, edit must be the same.
+
+When you pick **Managers** for either setting, **Select managers** appears. Pick at least one
+manager.
+
+The **Follow-ups** list only shows people the follow-ups they can view. Editing, pausing,
+deleting and sending reminders need edit access.
+
+<Callout type="warn">On a trial, these settings reset to **Everyone** when the trial ends.</Callout>

@@ -1,0 +1,20 @@
+{
+  "title": "Follow-ups",
+  "icon": "MessageSquare",
+  "pages": [
+    "index",
+    "---Set up---",
+    "create",
+    "schedule",
+    "channel-and-members",
+    "questions",
+    "messages",
+    "access",
+    "---Day to day---",
+    "answering",
+    "responses",
+    "reports",
+    "stats-and-summaries",
+    "manage"
+  ]
+}

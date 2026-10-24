@@ -1,16 +1,13 @@
 import { createGetUrl } from 'fumadocs-core/source';
 
-export const appName = 'My App';
+export const appName = 'Sup!';
 export const docsRoute = '/docs';
 export const docsImageRoute = '/og/docs';
 export const docsContentRoute = '/llms.mdx/docs';
 
-// fill this with your actual GitHub info, for example:
-export const gitConfig = {
-  user: 'fuma-nama',
-  repo: 'fumadocs',
-  branch: 'main',
-};
+// Fill in once the GitHub remote exists, e.g. { user: 'org', repo: 'sup-docs', branch: 'main' };
+// the nav GitHub link and the page "Open in GitHub" action appear then.
+export const gitConfig: { user: string; repo: string; branch: string } | null = null;
 
 const getContentUrl = createGetUrl(docsContentRoute);
 

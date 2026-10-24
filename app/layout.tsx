@@ -1,6 +1,12 @@
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import './global.css';
 import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: { template: '%s | Sup! Docs', default: 'Sup! Docs' },
+  description: 'How to use Sup! on Slack, Microsoft Teams and Webex.',
+};
 
 const inter = Inter({
   subsets: ['latin'],
