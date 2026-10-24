@@ -53,7 +53,7 @@ update docs as a side effect of a feature change while the feature is still movi
 ## Commands
 
 ```bash
-npm run dev          # http://localhost:5000
+npm run dev          # http://localhost:8800
 npm run build        # must pass before you say you're done
 npm run types:check
 ```

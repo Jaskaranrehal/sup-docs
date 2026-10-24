@@ -4,7 +4,7 @@ End-user documentation for Sup!, built with [Fumadocs](https://fumadocs.dev) on 
 
 ```bash
 npm install
-npm run dev     # http://localhost:5000
+npm run dev     # http://localhost:8800
 npm run build
 ```
 
