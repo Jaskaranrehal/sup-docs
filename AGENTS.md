@@ -46,8 +46,11 @@ update docs as a side effect of a feature change while the feature is still movi
 
 - Pages: `content/docs/<section>/<page>.mdx`, frontmatter `title` + `description`.
 - Sidebar order and section titles: `content/docs/<section>/meta.json` (`pages` array).
-- Images: `public/images/<section>/<page>/<name>.png`, referenced as
-  `/images/<section>/<page>/<name>.png`. Only add screenshots of the current UI.
+- Images: `public/images/<section>/<name>.png`, referenced as
+  `/images/<section>/<name>.png`, with alt text that says what the screenshot shows.
+- Screenshots: light mode only, of the current UI, taken in the fictional **Acme Corp**
+  workspace (made-up people, channels and answers; never real customer data), 1440px wide
+  at 2× and cropped to what the page is about. Write the page from the code, then capture.
 - Site name, nav and GitHub link: `lib/shared.ts`, `lib/layout.shared.tsx`.
 
 ## Commands

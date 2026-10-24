@@ -9,5 +9,5 @@ npm run build
 ```
 
 - Pages live in `content/docs/<section>/*.mdx`; `meta.json` in each folder sets the sidebar order.
-- Images go in `public/images/<section>/<page>/`.
+- Images go in `public/images/<section>/`; screenshots are light mode, from the fictional Acme Corp workspace.
 - Writing rules (including *when* to update docs) are in [AGENTS.md](AGENTS.md).
