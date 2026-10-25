@@ -1,0 +1,5 @@
+{
+  "title": "Announcements",
+  "icon": "Megaphone",
+  "pages": ["index", "leave-tracker-overhaul"]
+}
