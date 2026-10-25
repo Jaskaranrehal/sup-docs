@@ -1,6 +1,6 @@
 # Sup! docs
 
-End-user documentation for Sup!, built with [Fumadocs](https://fumadocs.dev) on Next.js.
+End-user documentation for Sup! (https://docs.supbot.com), built with [Fumadocs](https://fumadocs.dev) on Next.js.
 
 ```bash
 npm install

@@ -25,8 +25,10 @@ update docs as a side effect of a feature change while the feature is still movi
   user-visible labels exactly (button text, step names, toggle labels).
 - The old in-app docs at `../sup-frontend/public/content/documentation/` are from
   2023 and show the pre-redesign UI. Use them for structure and topic ideas
-  only, check every claim against the code, and do not delete them — they still
-  serve `/documentation` in the web app until the user retires them.
+  only, check every claim against the code, and do not delete them until the user
+  retires them. The app no longer serves them: every `/documentation/…` URL redirects
+  to its page here (`DOCS_PAGES` in `sup-frontend/src/components/content/ContentRoutes.jsx`).
+  If you move or rename a page or heading, update that map too.
 - If the code and an existing page disagree, the code wins; tell the user.
 - Workflows are legacy and being deprecated: do not document them.
 - Webex is being deprecated: do not mention it, even where the code still supports it.
@@ -58,7 +60,12 @@ update docs as a side effect of a feature change while the feature is still movi
 - No screenshots of third-party tools embedded in or linked from Sup! (Draxlr stats,
   Jotform, Google Sheets…). Describe them in text. Sup!'s own Slack/Teams message previews
   are fine.
-- Site name, nav and GitHub link: `lib/shared.ts`, `lib/layout.shared.tsx`.
+- Changelog: `content/docs/changelog.mdx`, newest first; one `## <d Mon yyyy>` entry per
+  release, with a `{/* Sources: … */}` comment listing the commits. It moved here from the
+  app (which now links to https://docs.supbot.com/docs/changelog). Clips go in as MP4 with
+  `<Video src=… label=… />`, never as GIFs.
+- Site name, nav and GitHub link: `lib/shared.ts`, `lib/layout.shared.tsx`. The site is served
+  at https://docs.supbot.com (`metadataBase` in `app/layout.tsx`).
 
 ## Commands
 

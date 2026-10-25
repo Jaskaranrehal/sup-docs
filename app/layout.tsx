@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://docs.supbot.com'),
   title: { template: '%s | Sup! Docs', default: 'Sup! Docs' },
   description: 'How to use Sup! on Slack and Microsoft Teams.',
 };

@@ -1,3 +1,11 @@
 {
-  "pages": ["index", "follow-ups", "leave-tracker", "forms", "settings", "faq"]
+  "pages": [
+    "index",
+    "follow-ups",
+    "leave-tracker",
+    "forms",
+    "settings",
+    "faq",
+    "changelog"
+  ]
 }
