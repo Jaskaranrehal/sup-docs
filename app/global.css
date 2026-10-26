@@ -17,6 +17,19 @@ html {
   scrollbar-gutter: stable;
 }
 
+/* The sidebar footer bar puts icon links (GitHub, once gitConfig is set) on the left and the
+   theme switch on the right. With no icon links the switch fills the bar, not an empty box. */
+[data-theme-toggle]:only-child {
+  flex: 1;
+  margin-inline-start: 0;
+  border-inline-start-width: 0;
+  padding-inline-start: 2px; /* the bar already pads the left by 2px, not the right */
+}
+
+[data-theme-toggle]:only-child > * {
+  flex: 1;
+}
+
 html > body[data-scroll-locked] {
   margin-right: 0px !important;
   --removed-body-scroll-bar-size: 0px !important;
