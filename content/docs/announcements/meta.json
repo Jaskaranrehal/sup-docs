@@ -1,5 +1,5 @@
 {
   "title": "Announcements",
   "icon": "Megaphone",
-  "pages": ["index", "leave-tracker-overhaul"]
+  "pages": ["index", "new-plans", "forms-with-follow-ups", "leave-tracker-overhaul"]
 }
