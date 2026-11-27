@@ -9,6 +9,14 @@ export const docsContentRoute = '/llms.mdx/docs';
 // the nav GitHub link and the page "Open in GitHub" action appear then.
 export const gitConfig: { user: string; repo: string; branch: string } | null = null;
 
+// Google Analytics 4: the www.supbot.com property, so a visit that moves between the two sites
+// stays one session. Production builds only; set NEXT_PUBLIC_GA_ID at build time to send
+// somewhere else (or to try it locally).
+export const gaMeasurementId: string | undefined =
+  process.env.NEXT_PUBLIC_GA_ID ||
+  (process.env.NODE_ENV === 'production' ? 'G-EWY594EGGR' : undefined);
+export const privacyPolicyUrl = 'https://www.supbot.com/privacy-policy';
+
 const getContentUrl = createGetUrl(docsContentRoute);
 
 export function getPageMarkdownUrl(page: { slugs: string[]; locale?: string }) {
